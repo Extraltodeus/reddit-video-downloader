@@ -7,4 +7,6 @@ Else : it starts the gui and you can download whatever you want from reddit.
 
 It requires tkinter and clipboard.
 
+Here is a screenshot to show you the wonderful GUI that comes with it :
+
 ![screenshot](https://i.imgur.com/NOkrFTZ.png)
