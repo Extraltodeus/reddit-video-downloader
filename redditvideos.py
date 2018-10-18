@@ -61,9 +61,6 @@ def redditDownloader():
 def quitter():
     win.destroy()
 
-def test():
-    os.system("xdg-open " + "./")
-
 pressepape = clipboard.paste()
 
 if isinstance(pressepape, str) and validate_web_url(pressepape):
