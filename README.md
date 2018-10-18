@@ -6,3 +6,5 @@ If there is already an URL in the clipboard it will use it, try to download the 
 Else : it starts the gui and you can download whatever you want from reddit.
 
 It requires tkinter and clipboard.
+
+![screenshot](https://i.imgur.com/NOkrFTZ.png)
