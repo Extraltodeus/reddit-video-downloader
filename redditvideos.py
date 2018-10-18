@@ -1,5 +1,5 @@
 #!/usr/bin/env python
-from tkinter import *
+from tkinter import Entry,Button,Tk,END
 import tkinter.font as tkFont
 import tkinter.ttk
 import requests
