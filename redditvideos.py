@@ -52,11 +52,12 @@ def redditDownloader():
     os.system("curl -o video.mp4 {}".format(video_url))
     os.system("curl -o audio.wav {}".format(audio_url))
 
-    video_path  = os.path.join(real_path,"Output",title)+".mp4"
-    folder_path = os.path.join(real_path,"Output")
+    video_path = os.path.join(real_path,"Output",title)+".mp4"
 
-    os.system("ffmpeg -y -i video.mp4 -i audio.wav -c:v copy -c:a aac -strict experimental '"+video_path+"'")
-    os.system("xdg-open " + folder_path)
+    os.system('ffmpeg -i video.mp4 -i audio.wav -c:v copy -c:a aac -strict experimental "{}"'.format(video_path))
+    
+    os.system('xdg-open "{}"'.format(video_path))
+    os.system('start "{}"'.format(video_path))   
 
 def quitter():
     win.destroy()
